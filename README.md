@@ -61,12 +61,12 @@ You can install Postman via this website: https://www.postman.com/downloads/
 ## Mandatory Checklists (Subscriber)
 -   [X] Clone https://gitlab.com/ichlaffterlalu/bambangshop-receiver to a new repository.
 -   **STAGE 1: Implement models and repositories**
-    -   [ ] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create SubscriberRequest model struct.`
-    -   [ ] Commit: `Create Notification database and Notification repository struct skeleton.`
-    -   [ ] Commit: `Implement add function in Notification repository.`
-    -   [ ] Commit: `Implement list_all_as_string function in Notification repository.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
+    -   [X] Commit: `Create Notification model struct.`
+    -   [X] Commit: `Create SubscriberRequest model struct.`
+    -   [X] Commit: `Create Notification database and Notification repository struct skeleton.`
+    -   [X] Commit: `Implement add function in Notification repository.`
+    -   [X] Commit: `Implement list_all_as_string function in Notification repository.`
+    -   [X] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
     -   [ ] Commit: `Create Notification service struct skeleton.`
     -   [ ] Commit: `Implement subscribe function in Notification service.`
@@ -85,5 +85,8 @@ This is the place for you to write reflections:
 ### Mandatory (Subscriber) Reflections
 
 #### Reflection Subscriber-1
+
+1. Mutex dan RwLock memiliki kegunaan dan cara bekerja yang berbeda. Mutex bekerja dengan cara satu data hanya bisa diakses oleh satu thread. Dalam artian lain, thread lain yang ingin memakai data yang sedang digunakan oleh suatu thread harus menunggu sampai thread tersebut selesai digunakan. RwLock, di sisi lain bekerja dengan cara kebalikan dari Mutex. RwLock memungkinkan thread untuk mengakses suatu data meskipun data tersebut sedang digunakan oleh thread lain.
+2. Rust sangat erat kaitannya dengan thread-safe programming. Tentunya, syntax di Java dengan syntax di Rust akan berbeda implementasinya. Static variable dibuat immutable agar thread-safe.
 
 #### Reflection Subscriber-2

@@ -67,17 +67,17 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [X] Commit: `Implement add function in Notification repository.`
     -   [X] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [X] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
--   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+-   **STAGE 2: Implement services and controllers**
+    -   [X] Commit: `Create Notification service struct skeleton.`
+    -   [X] Commit: `Implement subscribe function in Notification service.`
+    -   [X] Commit: `Implement subscribe function in Notification controller.`
+    -   [X] Commit: `Implement unsubscribe function in Notification service.`
+    -   [X] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [X] Commit: `Implement receive_notification function in Notification service.`
+    -   [X] Commit: `Implement receive function in Notification controller.`
+    -   [X] Commit: `Implement list_messages function in Notification service.`
+    -   [X] Commit: `Implement list function in Notification controller.`
+    -   [X] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -90,3 +90,7 @@ This is the place for you to write reflections:
 2. Rust sangat erat kaitannya dengan thread-safe programming. Tentunya, syntax di Java dengan syntax di Rust akan berbeda implementasinya. Static variable dibuat immutable agar thread-safe.
 
 #### Reflection Subscriber-2
+
+1. lib.rs berfungsi sebagai library yang kita buat sendiri. Di file ini, kita mengkonfigurasi app kita mulai dari membuat variable untuk nama port, url, dan memastikan file .env kita sudah benar. Selain itu, hal yang menarik dan saya baru ketahui setelah membuka file lib.rs adalah ternyata compose_error_response merupakan function buatan bukan function bawaan dari Rust XD.
+2. Dengan observer pattern, penambahan subscriber baru akan lebih mudah karena sudah memiliki list of subscribers. Jika kita membuat lebih dari 1 instance main app, subscriber masih tetap mudah untuk ditambahkan karena tiap main app memiliki observer sendiri, sehingga tidak berbagi notification antar main app.
+3. Saat saya menulis README ini, saya belum membuat testing apapun atau mengubah Postman Collection.
